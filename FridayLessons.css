@@ -1,0 +1,26 @@
+body {
+	background-color: #636363;
+	font-family: Calibri, Sans-serif; 
+}
+
+h1 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	color: white;
+}
+
+.list {
+	background-color: black;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	background-color: #1865A1;
+	width: 200px;
+	border: 1px dashed;
+	padding: 5px 5px 5px 5px;
+	box-shadow: 5px 5px 5px #3F5261
+}
