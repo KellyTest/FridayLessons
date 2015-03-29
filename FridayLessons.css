@@ -27,9 +27,14 @@ a:active {
 	color: #0066cc;
 }
 
-.list {
+ul {
 	background-color: black;
 	color: white;
+	list-style-image: url(images/kawaii.jpg);
+}
+
+div {
+	display: inline-block;
 }
 
 .Main {
