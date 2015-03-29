@@ -4,11 +4,29 @@ body {
 }
 
 h1 {
+	position: relative;
+	right: 30px;
+	top: 50px;
+	z-index: -1;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: black;
 	color: white;
+}
+
+h2 {
+	background-image: url(images/flag.jpg);
+	background-size: 100px auto;
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-origin: border-box;
+	margin: 0;
+}
+
+h2#Spam::before {
+	display: block;
+	content: "hello";
 }
 
 a:link {
@@ -32,12 +50,23 @@ a:active {
 	color: white;
 }
 
+.section {
+	width: 312px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px !important;
+}
+
+.section:nth-of-type(odd) {
+	background-color: yellow;
+}
+
 .Main {
 	text-align: center;
 	background-color: #1865A1;
 	width: 300px;
-	border: 1px dashed;
-	padding: 5px 5px 5px 5px;
+	border: 10px dashed;
+	padding: 15px 15px 15px 15px;
 	box-shadow: 5px 5px 5px #3F5261;
 }
 
