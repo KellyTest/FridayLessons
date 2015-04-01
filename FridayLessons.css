@@ -37,6 +37,7 @@ ul {
 	color: black;
 	list-style-image: url(images/kawaii.jpg);
 	font-size: .75em;
+	font-weight: bold;
 	position: fixed;
 }
 
@@ -46,32 +47,48 @@ ul {
 	vertical-align: top;
 	position: relative;
 	left: 200px;
+	text-align: center;
+	width: 300px;
+	padding: 5px 5px 5px 5px;
+}
+
+img {
+	margin: 0;
+}
+
+h2 {
+	margin: 20px 0 0 0;
+	border: 1px dashed black; 
 }
 
 .Main {
-	text-align: center;
-	background-color: #1865A1;
-	width: 300px;
-	border: 1px dashed;
+	background-color: #FF5E00;
 	padding: 5px 5px 5px 5px;
-	box-shadow: 5px 5px 5px #3F5261;
 }
 
 .Side {
-	text-align: center;
-	background-color: #77ab59;
-	width: 300px;
-	border: 1px dashed;
+	background-color: #D92B00;
 	padding: 5px 5px 5px 5px;
-	box-shadow: 5px 5px 5px #3F5261;
 }
 
 .Dessert {
-	text-align: center;
-	background-color: #c87cdf;
-	width: 300px;
-	border: 1px dashed;
+	background-color: #B32400;
 	padding: 5px 5px 5px 5px;
-	box-shadow: 5px 5px 5px #3F5261;
 }
 
+p {
+	font-weight: bold;
+	margin: 0;
+	height: 125px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	font-size: .75em;
+	font-family: Cursive;
+	background-color: white;
+	float: right;
+	height: 20px;
+}
