@@ -1,0 +1,66 @@
+#slider {
+	width: 500px;
+	height: 700px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+
+#slider figure{
+	width: 500px;
+	height: 700px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: -700px;
+	z-index: 1;
+	transition: all linear 0.5s;
+}
+
+#slider figure:target{
+	left:0;
+}
+
+#slider figure:first-child {
+	left: 0;
+}
+
+#slider figure figcaption {
+   position: absolute;
+   bottom: 0;
+   right: 700px;
+   z-index: 2;
+   color: #fff;
+   padding: 10px 20px;
+   width: 450px;
+   background: #000;
+   transition: all linear 1s;
+   opacity: 0;
+}
+
+#slider figure:target figcaption {
+	right: 0;
+	opacity:1;
+}
+
+#sliderPagination {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	z-index: 10;
+}
+
+#sliderPagination a {
+	text-decoration: none;
+	background: rgba(255,255,255,0.5);
+	padding: 4px 8px;
+	color: #333;
+	border-radius: 20px;
+	transition: all linear 0.5s;
+}
+
+#sliderPagination a:hover {
+	background: #fff;
+	color: #666;
+	width: auto;	
+}

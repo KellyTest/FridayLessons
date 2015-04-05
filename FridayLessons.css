@@ -1,3 +1,8 @@
+@keyframes dancing {
+  0%   { transform: translateX(0vw); }
+  100% { transform: translateX(80vw); }
+}
+
 body {
 	background: url(images/beach.jpg)  no-repeat center center fixed;
 	background-size: cover;
@@ -5,15 +10,16 @@ body {
 }
 
 h1 {
-	text-align: center;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: url(images/back.jpg);
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 20px;
 	color: white;
 	padding: 20px;
+	text-align: center;
 }
 
 a:link {
@@ -39,6 +45,13 @@ ul {
 	font-size: .75em;
 	font-weight: bold;
 	position: fixed;
+}
+
+.hula {
+	position: absolute;
+	\\transform: translateX(50vw);
+	z-index: 5;
+	animation: dancing 10s infinite alternate;
 }
 
 .section {
@@ -85,10 +98,15 @@ p {
 	align-items: center;
 }
 
-.footer {
-	font-size: .75em;
-	font-family: Cursive;
-	background-color: white;
+audio {
+	display: block;
+}
+
+.link {
+	display: inline-block;
 	float: right;
-	height: 20px;
+	background-image: url(images/WP_20130526_005.jpg);
+	font-size: 20px;
+	color: white !important;
+	padding: 20px;
 }
