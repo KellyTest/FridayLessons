@@ -1,14 +1,36 @@
+body {
+	font-family: Calibri;
+	background-color: #ff32ba;
+}
+
+#face {
+	display: inline-flex;
+
+}
+
+h1 {
+	float: left;
+	position: relative;
+	background-color: #6fcb9f;
+	font-size: 50px;
+	padding: 10px;
+	text-align: center;
+	border: 20px solid #fffeb3;
+	width: 400px;
+}
+
+
 #slider {
-	width: 500px;
-	height: 700px;
+	width: 400px;
+	height: 550px;
 	overflow: hidden;
 	position: relative;
 	margin: 0 auto;
 }
 
 #slider figure{
-	width: 500px;
-	height: 700px;
+	width: 400px;
+	height: 550px;
 	margin: 0;
 	position: absolute;
 	top: 0;
@@ -26,13 +48,14 @@
 }
 
 #slider figure figcaption {
+   font-weight: bold;
    position: absolute;
    bottom: 0;
-   right: 700px;
+   right: 500px;
    z-index: 2;
-   color: #fff;
+   color: #d64525;
    padding: 10px 20px;
-   width: 450px;
+   width: 340px;
    background: #000;
    transition: all linear 1s;
    opacity: 0;
